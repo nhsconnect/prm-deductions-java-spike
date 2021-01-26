@@ -24,7 +24,7 @@ public class JmsConsumer {
         try {
             ActiveMQTextMessage objectMessage = (ActiveMQTextMessage)message;
             System.out.println("Received Message: "+ objectMessage.getText());
-            jmsTemplate.convertAndSend("unhandled-inbound", objectMessage);
+//            jmsTemplate.convertAndSend("unhandled-inbound", objectMessage);
 
         } catch(Exception e) {
             System.out.println("Received Exception : "+ e);
